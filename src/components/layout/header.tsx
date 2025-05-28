@@ -51,7 +51,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2">
             <div className="relative h-8 w-32 sm:w-36">
               <Image
-                src="/images/reelmojo.png"
+                src="https://i.postimg.cc/59YjzyNx/reelmojo.png"
                 alt="ReelMojo Logo"
                 fill
                 priority
