@@ -7,6 +7,10 @@ import type { Bundle } from '@/lib/constants';
 export default function PaymentButton({ bundle }: { bundle: Bundle }) {
   const { toast } = useToast();
 
+  const redirectToDownload = (downloadUrl: string) => {
+    // Placeholder: Replace with actual download logic
+    window.location.href = downloadUrl;
+  };
   const handlePayment = () => {
     // Placeholder: Replace with Razorpay/Stripe integration
     toast({
@@ -14,7 +18,16 @@ export default function PaymentButton({ bundle }: { bundle: Bundle }) {
       description: `You are buying "${bundle.title}" for ₹${bundle.price}.`,
       variant: 'default',
     });
-    // Example: window.location.href = bundle.paymentUrl;
+    if (bundle.price === 0) {
+      toast({
+        title: 'Download Ready',
+        description: `You can now download "${bundle.title}" for free.`,
+        variant: 'success',
+      });
+       redirectToDownload(bundle.downloadUrl);
+    }
+    // Simulate a successful payment
+   
   };
 
   return (

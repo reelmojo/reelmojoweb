@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import type { Bundle } from '@/lib/constants';
-import { ShoppingCart, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 interface BundleCardProps {
@@ -72,8 +72,8 @@ export default function BundleCard({ bundle }: BundleCardProps) {
             className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
             size="lg"
           >
-            <ShoppingCart className="mr-2 h-5 w-5" />
-            Purchase Now
+            <Download className="mr-2 h-5 w-5" />
+           Download Now
           </Button>
         </CardFooter>
       </Card>
