@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 210 17% 95%; /* Light Gray #F0F2F5 */
+    --foreground: 210 10% 23%; /* Dark Gray #333A47 */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 10% 23%; /* Dark Gray */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 210 10% 23%; /* Dark Gray */
+
+    --primary: 197 71% 53%; /* Vibrant Blue #29ABE2 */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 197 71% 90%; /* Lighter Blue */
+    --secondary-foreground: 197 71% 30%; /* Darker Blue for text on Lighter Blue */
+
+    --muted: 210 17% 90%; /* Lighter Gray than background */
+    --muted-foreground: 210 10% 45%; /* Medium Gray */
+
+    --accent: 46 100% 70%; /* Yellow #FFDA63 */
+    --accent-foreground: 46 25% 20%; /* Dark Brown/Mustard for text on Yellow */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 17% 88%; /* Softer border color */
+    --input: 210 17% 80%; /* Input border */
+    --ring: 197 71% 53%; /* Primary blue for focus rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 197 71% 53%;
+    --chart-2: 197 71% 63%;
+    --chart-3: 197 71% 73%;
+    --chart-4: 197 71% 83%;
+    --chart-5: 197 71% 43%;
+
+    /* Sidebar variables (updated for consistency, though not heavily used in this app structure) */
+    --sidebar-background: 210 17% 98%; /* Very light gray */
+    --sidebar-foreground: 210 10% 23%;
+    --sidebar-primary: 197 71% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 197 71% 90%;
+    --sidebar-accent-foreground: 197 71% 30%;
+    --sidebar-border: 210 17% 88%;
+    --sidebar-ring: 197 71% 53%;
+  }
+
+  .dark {
+    --background: 210 10% 15%; /* Dark Gray */
+    --foreground: 210 17% 95%; /* Light Gray */
+
+    --card: 210 10% 20%; /* Slightly lighter Dark Gray for cards */
+    --card-foreground: 210 17% 95%;
+
+    --popover: 210 10% 10%; /* Even darker for popovers */
+    --popover-foreground: 210 17% 95%;
+
+    --primary: 197 71% 53%; /* Vibrant Blue */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 197 71% 30%; /* Darker Blue */
+    --secondary-foreground: 197 71% 90%; /* Lighter Blue */
+
+    --muted: 210 10% 25%; /* Darker muted gray */
+    --muted-foreground: 210 17% 75%; /* Lighter muted foreground */
+
+    --accent: 46 100% 70%; /* Yellow */
+    --accent-foreground: 46 25% 20%; /* Dark Brown/Mustard */
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 10% 25%;
+    --input: 210 10% 30%;
+    --ring: 197 71% 53%;
+    
+    --chart-1: 197 71% 53%;
+    --chart-2: 197 71% 43%;
+    --chart-3: 197 71% 33%;
+    --chart-4: 197 71% 23%;
+    --chart-5: 197 71% 63%;
+
+    /* Dark Sidebar variables */
+    --sidebar-background: 210 10% 10%;
+    --sidebar-foreground: 210 17% 95%;
+    --sidebar-primary: 197 71% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 197 71% 25%;
+    --sidebar-accent-foreground: 197 71% 85%;
+    --sidebar-border: 210 10% 20%;
+    --sidebar-ring: 197 71% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
