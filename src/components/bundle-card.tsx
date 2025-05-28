@@ -47,6 +47,11 @@ export default function BundleCard({ bundle }: BundleCardProps) {
           </CardDescription>
           
           <div className="flex items-center justify-between mt-4">
+          <p className="text-2xl font-bold text-primary line-through">
+          ₹{bundle.mrp}
+
+           
+          </p>
             <p className="text-2xl font-bold text-primary">₹{bundle.price}</p>
             {Array.isArray(bundle.tags) && bundle.tags.length > 0 && (
               <div className="flex flex-wrap gap-1">

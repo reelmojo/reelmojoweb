@@ -3,6 +3,7 @@ export type Bundle = {
   id: string;
   title: string;
   price: number;
+  mrp:number;
   description: string;
   image?: string;
   imageUrl: string;        
@@ -26,6 +27,7 @@ export const bundles: Bundle[] = [
     features: ['500+ High-Quality 2D Animated Reels', 'Instant Download', 'Commercial Use Rights', 'Trending Formats', 'Viral-Ready Content'],
     platform: ['instagram', 'youtube'],
     tags: ['2D Animation', 'Funny', 'Viral', 'Memes', 'Comedy', 'Engagement']
+    ,mrp:9
   },
   {
     id: 'viral-ai-hindu-reels',
@@ -37,7 +39,7 @@ export const bundles: Bundle[] = [
     downloadUrl: 'https://drive.google.com/drive/folders/1ng42fi28u6N8MoNgAIndMD77TcrRhD2j',
     features: ['500+ AI Hindu Devotional Reels', 'Festival Special Content', 'Mantra & Prayer Videos', 'High Engagement Guaranteed', 'Cultural Authenticity'],
     platform: ['instagram', 'youtube'],
-    tags: ['Hindu', 'Spiritual', 'Devotional', 'AI Generated', 'Religious', 'Cultural']
+    tags: ['Hindu', 'Spiritual', 'Devotional', 'AI Generated', 'Religious', 'Cultural'],mrp:9
   },
   {
     id: 'viral-ai-motivational-bonus',
@@ -49,7 +51,7 @@ export const bundles: Bundle[] = [
     downloadUrl: 'https://drive.google.com/drive/folders/1kj3D8LqbD-hMOVOD8i0yroA6o3HTdtpp?usp=sharing',
     features: ['600+ Premium Motivational Reels', 'Success Mindset Content', 'Daily Inspiration Videos', 'Proven Engagement Boosters', 'Life Coach Approved'],
     platform: ['instagram', 'youtube'],
-    tags: ['Motivation', 'Success', 'Mindset', 'Inspiration', 'Self-Help', 'Personal Growth']
+    tags: ['Motivation', 'Success', 'Mindset', 'Inspiration', 'Self-Help', 'Personal Growth'],mrp:9
   },
   {
     id: 'viral-ai-fitness-reels',
@@ -61,7 +63,7 @@ export const bundles: Bundle[] = [
     downloadUrl: 'https://drive.google.com/drive/folders/17TZxcANBRfCZQL0G0ZUnIeQ2FyVElq6A?usp=drive_link',
     features: ['500+ Professional Fitness Reels', 'Workout Routines', 'Nutrition Tips', 'Transformation Stories', 'Gym-Ready Content'],
     platform: ['instagram', 'youtube'],
-    tags: ['Fitness', 'Workout', 'Gym', 'Health', 'Exercise', 'Transformation']
+    tags: ['Fitness', 'Workout', 'Gym', 'Health', 'Exercise', 'Transformation'],mrp:9
   },
   {
     id: 'viral-ai-tech-reels',
@@ -73,7 +75,7 @@ export const bundles: Bundle[] = [
     downloadUrl: 'https://drive.google.com/drive/folders/1YKqZJe120qfeXoGIflkgjRC8z4-pdVks',
     features: ['500+ Tech-Focused Reels', 'AI & Gadget Reviews', 'Coding Tips & Tricks', 'Tech News Updates', 'Future-Ready Content'],
     platform: ['instagram', 'youtube'],
-    tags: ['Technology', 'AI', 'Gadgets', 'Coding', 'Tech Reviews', 'Innovation']
+    tags: ['Technology', 'AI', 'Gadgets', 'Coding', 'Tech Reviews', 'Innovation'],mrp:9
   },
   {
     id: 'viral-health-reels',
@@ -85,55 +87,56 @@ export const bundles: Bundle[] = [
     downloadUrl: 'https://drive.google.com/drive/folders/10YYPs43_ODxP9XCbywP-dVedyzA0Icn6?usp=drive_link',
     features: ['500+ Health & Wellness Reels', 'Medical Tips & Advice', 'Healthy Living Content', 'Professional Quality', 'Educational Value'],
     platform: ['instagram', 'youtube'],
-    tags: ['Health', 'Wellness', 'Medical', 'Healthcare', 'Healthy Living', 'Prevention']
+    tags: ['Health', 'Wellness', 'Medical', 'Healthcare', 'Healthy Living', 'Prevention'],mrp:9
   },
   {
     id: 'instagram-growth-mastery',
     title: 'Instagram Growth Mastery Course 2022 📈',
     description: 'Master Instagram like a pro! Complete growth course with proven strategies, algorithm secrets, and monetization techniques. From 0 to 100K followers guaranteed!',
-    price: 499,
+    price: 0,
     imageUrl: '/images/reelmojo-bundle-cover.png',
     imageHint: 'instagram growth course',
     downloadUrl: 'https://drive.google.com/drive/folders/1q9rx8dKGhmYWBdVTbjDz7PuC3u6PXuEF?usp=drive_link',
     features: ['Complete Growth Strategy', 'Algorithm Secrets Revealed', 'Monetization Techniques', 'Case Studies Included', 'Lifetime Access'],
     platform: ['instagram'],
     tags: ['Instagram', 'Growth', 'Course', 'Marketing', 'Social Media', 'Monetization']
+    ,mrp:9
   },
   {
     id: 'art-craft-reel-bundle',
     title: 'Art 🎨 and Craft Reel Bundle',
     description: 'Unleash creativity! Premium art and craft reels featuring DIY projects, painting tutorials, and creative inspiration. Perfect for artists, crafters, and creative entrepreneurs.',
-    price: 179,
+    price: 0,
      imageUrl: '/images/reelmojo-bundle-cover.png',
     imageHint: 'art craft diy creative',
     downloadUrl: 'https://drive.google.com/drive/folders/1mwN5iMJZMCg7yKtCBXupUoeyu3yEQadn',
     features: ['Premium Art & Craft Content', 'DIY Project Tutorials', 'Creative Inspiration', 'Step-by-Step Guides', 'Artist-Approved'],
     platform: ['instagram', 'youtube'],
-    tags: ['Art', 'Craft', 'DIY', 'Creative', 'Painting', 'Handmade']
+    tags: ['Art', 'Craft', 'DIY', 'Creative', 'Painting', 'Handmade'],mrp:9
   },
   {
     id: 'mega-instagram-reels-bundle',
     title: '8200+ MEGA Instagram Reels Bundle 🚀',
     description: 'The ultimate content goldmine! 8200+ premium reels across all niches. Never run out of content again! Lifetime value for serious content creators and agencies.',
-    price: 999,
+    price: 0,
  imageUrl: '/images/reelmojo-bundle-cover.png',
     imageHint: 'mega bundle instagram reels',
     downloadUrl: 'https://drive.google.com/drive/folders/12mlzZqUhMeSvpO_HcfpSOGShZs2YUXit?usp=sharing',
     features: ['8200+ Premium Reels', 'All Niches Covered', 'Lifetime Content Supply', 'Commercial Rights', 'Agency-Ready Package'],
     platform: ['instagram', 'youtube'],
-    tags: ['Mega Bundle', 'Instagram', 'All Niches', 'Premium', 'Lifetime', 'Agency']
+    tags: ['Mega Bundle', 'Instagram', 'All Niches', 'Premium', 'Lifetime', 'Agency'],mrp:99
   },
   {
     id: 'landing-page-templates',
     title: '500+ Ready-Made Landing Page Templates 🌐',
     description: 'Convert visitors into customers! 500+ high-converting landing page templates for every industry. Boost your sales by 400% with proven designs!',
-    price: 399,
+    price:0,
      imageUrl: '/images/reelmojo-bundle-cover.png',
     imageHint: 'landing page templates conversion',
     downloadUrl: 'https://drive.google.com/file/d/11LMeLG3F-Sdk6a28tnDSfq3apm_x-igd/view?usp=drive_link',
     features: ['500+ Professional Templates', 'High-Conversion Designs', 'Mobile Responsive', 'Easy Customization', 'Industry-Specific'],
     platform: ['instagram', 'youtube'],
-    tags: ['Landing Pages', 'Templates', 'Conversion', 'Web Design', 'Marketing', 'Sales']
+    tags: ['Landing Pages', 'Templates', 'Conversion', 'Web Design', 'Marketing', 'Sales'],mrp:50
   }
 ];
 

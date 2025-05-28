@@ -14,10 +14,10 @@ import { cn } from '@/lib/utils';
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Instagram Reels', href: '/instagram-reels' },
-  { label: 'YouTube Shorts', href: '/youtube-shorts' },
-  { label: 'Premium Bundles', href: '/bundles' },
-  { label: 'Trending', href: '/trending' },
+  { label: 'Instagram Reels', href: '/bundle' },
+  { label: 'YouTube Shorts', href: '/bundle' },
+  { label: 'Courses', href: '/courses' },
+ 
   { label: 'Contact & Support', href: '/contact' },
 ];
 

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     'Download Reels',
     'Download Shorts'
   ],
-  metadataBase: new URL('https://reelmojo.com'), // Replace with your domain
+  metadataBase: new URL('https://reelmojo.vercel.app'), // Replace with your domain
   alternates: {
     canonical: '/',
   },
@@ -47,11 +47,11 @@ export const metadata: Metadata = {
     title: 'ReelMojo - Viral Instagram Reels & YouTube Shorts Bundles',
     description:
       'Download 5000+ viral Instagram Reels and YouTube Shorts bundles. Boost your followers, engagement, and reach with high-quality, ready-to-use video packs for creators, influencers, and businesses.',
-    url: 'https://reelmojo.com',
+    url: 'https://reelmojo.vercel.app',
     siteName: 'ReelMojo',
     images: [
       {
-        url: '/og-image.png', // Place this image in your /public folder
+        url: '/images/reel-bundle', // Place this image in your /public folder
         width: 1200,
         height: 630,
         alt: 'ReelMojo - Viral Reels & Shorts Bundles',
