@@ -15,18 +15,15 @@ interface BundleCardProps {
 export default function BundleCard({ bundle }: BundleCardProps) {
   const { toast } = useToast();
 
-  const handleBuyNow = (e: React.MouseEvent) => {
-    e.preventDefault(); // Prevent link navigation
-    e.stopPropagation();
+  const handleDownloadNow = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     
-    // Payment integration logic
-    toast({
-      title: 'Purchase Initiated',
-      description: `Processing payment for "${bundle.title}" (₹${bundle.price})`,
-      variant: 'default',
-    });
-    console.log('Initiating payment for:', bundle.id);
-  };
+//redirect to individual bundle page
+    if (bundle.id) {
+      window.location.href = `/bundles/${bundle.id}`;
+    }
+    
+  }
 
   return (
     <Link href={`/bundles/${bundle.id}`} className="block h-full">
@@ -68,7 +65,7 @@ export default function BundleCard({ bundle }: BundleCardProps) {
 
         <CardFooter className="p-6 pt-0">
           <Button
-            onClick={handleBuyNow}
+            onClick={handleDownloadNow}
             className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
             size="lg"
           >
