@@ -11,11 +11,11 @@ export type Bundle = {
   downloadUrl: string;     
   images?: string[];       
   features?: string[];     
-  platform?: ('instagram' | 'youtube')[]; 
+  platform?: string[]; 
   tags?: string[];         
 };
 
-export const bundles: Bundle[] = [
+export const bundles: Bundle[] = [ 
   {
     id: 'viral-2d-animation-funny',
     title: '500+ VIRAL 2D Animation Funny Reels Bundle 🎬',
@@ -137,8 +137,91 @@ export const bundles: Bundle[] = [
     features: ['500+ Professional Templates', 'High-Conversion Designs', 'Mobile Responsive', 'Easy Customization', 'Industry-Specific'],
     platform: ['instagram', 'youtube'],
     tags: ['Landing Pages', 'Templates', 'Conversion', 'Web Design', 'Marketing', 'Sales'],mrp:50
-  }
+  }, 
+  {
+  id: "complete-full-stack-web-development-bootcamp",
+  title: "The Complete Full-Stack Web Development Bootcamp",
+  price: 0,
+  mrp: 499,
+  description: `
+Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps.
+
+Welcome to The Complete Full-Stack Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average, this is one of the HIGHEST RATED courses in the history of Udemy!
+
+At 65+ hours, this course is the most comprehensive web development course available online. Even if you have zero programming experience, this course will take you from beginner to mastery.
+
+Key highlights:
+- Taught by Dr. Angela Yu, lead instructor at the App Brewery, London’s leading in-person programming bootcamp.
+- Updated for 2025, covering the latest tools and technologies used at companies like Apple, Google, and Netflix.
+- Beautiful animated explanation videos and real-world projects.
+- Curriculum developed over four years with comprehensive student feedback.
+- Over a million students taught, many now professional developers or startup founders.
+- Save over $12,000 compared to in-person bootcamps.
+- Constantly updated with new content and projects.
+
+The course includes over 65 hours of HD video tutorials and builds your programming knowledge while making real-world websites and web apps.
+
+Technologies and topics covered:
+- Front-End: HTML5, CSS3, Bootstrap 4, Javascript ES6, DOM Manipulation, jQuery, Bash Command Line, Git & GitHub
+- Back-End: Node.js, NPM, Express.js, EJS, REST, APIs, Databases (SQL, MongoDB, Mongoose), Authentication, Firebase
+- React.js & React Hooks
+- Web Design & Deployment (GitHub Pages, Heroku, MongoDB Atlas)
+- Web3: Blockchain, Token contracts, NFT minting/buying/selling logic
+
+By the end, you'll be fluent in programming and ready to build any website you can dream of. Build a portfolio of 32+ websites to show employers.
+
+Includes:
+- Animated lectures, code challenges, real-world projects, quizzes, downloadable resources, eBook, and more.
+- 30-day full money-back guarantee.
+
+Who is this for?
+- Beginners, aspiring developers, startup founders, and anyone wanting to learn full-stack web development in one course.
+
+Created by Dr. Angela Yu. Last updated 2/2025. English.
+Size: 51.10 GB
+  `,
+  image: "https://img-c.udemycdn.com/course/480x270/1565838_e54e_16.jpg",
+  imageUrl: "https://img-c.udemycdn.com/course/480x270/1565838_e54e_16.jpg",
+  imageHint: "The Complete Full-Stack Web Development Bootcamp - Udemy Cover",
+  downloadUrl: "https://mega.nz/file/GU8EmDaY#-l_Nf_V-_QmTlzIUeTnVyoihy9xCy1dmPTgTacXVLBs",
+  images: [
+    "https://img-c.udemycdn.com/course/750x422/1565838_e54e_16.jpg",
+    "https://img-c.udemycdn.com/course/480x270/1565838_e54e_16.jpg"
+  ],
+  features: [
+    "Build 16 web development projects for your portfolio",
+    "Learn the latest technologies: Javascript, React, Node, Web3",
+    "Build fully-fledged websites and web apps",
+    "Work as a freelance web developer",
+    "Master frontend development with React",
+    "Master backend development with Node",
+    "Learn professional developer best practices",
+    "No programming experience needed",
+    "Step-by-step software setup guidance",
+    "65+ hours of HD video tutorials",
+    "Real-world projects and quizzes",
+    "Downloadable resources and cheatsheets",
+    "$12,000+ worth of course materials",
+    "30-day full money-back guarantee"
+  ],
+  platform: ["web"],
+  tags: [
+    "web development",
+    "full-stack",
+    "javascript",
+    "react",
+    "node",
+    "mongodb",
+    "web3",
+    "dapps",
+    "bootcamp",
+    "portfolio"
+  ]
+}
+
 ];
+
+
 
 // Add this to your constants file where testimonials are defined
 
