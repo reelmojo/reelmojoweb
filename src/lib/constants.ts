@@ -150,35 +150,6 @@ Welcome to The Complete Full-Stack Web Development Bootcamp, the only course you
 
 At 65+ hours, this course is the most comprehensive web development course available online. Even if you have zero programming experience, this course will take you from beginner to mastery.
 
-Key highlights:
-- Taught by Dr. Angela Yu, lead instructor at the App Brewery, London’s leading in-person programming bootcamp.
-- Updated for 2025, covering the latest tools and technologies used at companies like Apple, Google, and Netflix.
-- Beautiful animated explanation videos and real-world projects.
-- Curriculum developed over four years with comprehensive student feedback.
-- Over a million students taught, many now professional developers or startup founders.
-- Save over $12,000 compared to in-person bootcamps.
-- Constantly updated with new content and projects.
-
-The course includes over 65 hours of HD video tutorials and builds your programming knowledge while making real-world websites and web apps.
-
-Technologies and topics covered:
-- Front-End: HTML5, CSS3, Bootstrap 4, Javascript ES6, DOM Manipulation, jQuery, Bash Command Line, Git & GitHub
-- Back-End: Node.js, NPM, Express.js, EJS, REST, APIs, Databases (SQL, MongoDB, Mongoose), Authentication, Firebase
-- React.js & React Hooks
-- Web Design & Deployment (GitHub Pages, Heroku, MongoDB Atlas)
-- Web3: Blockchain, Token contracts, NFT minting/buying/selling logic
-
-By the end, you'll be fluent in programming and ready to build any website you can dream of. Build a portfolio of 32+ websites to show employers.
-
-Includes:
-- Animated lectures, code challenges, real-world projects, quizzes, downloadable resources, eBook, and more.
-- 30-day full money-back guarantee.
-
-Who is this for?
-- Beginners, aspiring developers, startup founders, and anyone wanting to learn full-stack web development in one course.
-
-Created by Dr. Angela Yu. Last updated 2/2025. English.
-Size: 51.10 GB
   `,
   image: "https://img-c.udemycdn.com/course/480x270/1565838_e54e_16.jpg",
   imageUrl: "https://img-c.udemycdn.com/course/480x270/1565838_e54e_16.jpg",
@@ -215,7 +186,8 @@ Size: 51.10 GB
     "web3",
     "dapps",
     "bootcamp",
-    "portfolio"
+    "portfolio",
+    "Course"
   ]
 }
 
